@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Playlist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="material-symbols-outlined">library_music</span> Plataforma Musical</h1>
+    </header>
+
+    <main>
+        <nav>
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="Index.html"><span class="material-symbols-outlined">home</span> Home</a></li>
+                <li><a href="disco.html"><span class="material-symbols-outlined">album</span> Disco</a></li>
+                <li><a href="cantante.html"><span class="material-symbols-outlined">person</span> Cantante</a></li>
+                <li><a href="cancion.html"><span class="material-symbols-outlined">music_note</span> Canción</a></li>
+                <li><a href="playlist.html" class="active"><span class="material-symbols-outlined">queue_music</span> Playlist</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <article>
+                <h2>Registro de Playlist</h2>
+                <form id="form-playlist">
+                    <p>
+                        <label for="playlist-nombre">Nombre:</label>
+                        <input type="text" id="playlist-nombre" required>
+                    </p>
+                    <p>
+                        <label for="playlist-usuario">Usuario:</label>
+                        <select id="playlist-usuario" required>
+                            <option value="">-- Seleccionar Usuario --</option>
+                            <option value="Usuario 1">Usuario 1</option>
+                            <option value="Usuario 2">Usuario 2</option>
+                        </select>
+                    </p>
+                    <button type="submit"><span class="material-symbols-outlined">playlist_add</span> Guardar Playlist</button>
+                </form>
+                <section class="resultado" id="res-playlist"></section>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Grupo:</strong> 4°A | <strong>Alumno:</strong> Arturo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
