@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--First Mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--icono-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+    <title>Pagina Bootstrap</title>
+</head>
+<body >
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="imagenesA/ARTURO.jpg" width="130" height="100"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-dark fw-bold" href="#perfil">Perfil Profesional</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#Habilidades">Habilidades Técnicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#proyectos">Proyectos Académicos Destacados</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#Educación">Educación</a>
+        </li>
+
+        <!--menu desplegable-->
+        <li class="nav-item dropdown text-dark fw-bold">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Certificaciones y Cursos</a>
+        <ul class="dropdown-menu">
+     <li><a class="dropdown-item" href="#">Fundamentos de Linux</a></li>
+    <li><a class="dropdown-item" href="#">Talleres Técnicos y de Nivelación</a></li>
+  </ul>
+</li>
+
+      </ul>
+      <ul class="navbar-nav text-dark fw-bold ">
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModalLogin"><span class="material-symbols-outlined">star</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <main class="container-fluid bg-dark" >
+        <section class="container mt-5 pt-4">
+    <div class="p-5 bg-secondary text-white rounded shadow">
+        <h2 class="text-center fw-bold mb-3">Perfil Profesional</h2>
+        <p class="fs-5 text-center">
+            Estudiante apasionado por la tecnología, enfocado en el desarrollo de software, administración de bases de datos y soporte técnico. Con gran interés en la optimización de sistemas y el trabajo colaborativo para la resolución de problemas informáticos.
+        </p>
+    </div>
+</section>
+
+       <section class="container mt-5">
+    <h2 class="text-center fw-bold text-white mb-4">HABILIDADES TÉCNICAS</h2>
+    <div class="row g-4">
+        
+        <!-- Tarjeta 1: Lenguajes -->
+        <div class="col-md-4">
+            <div class="card bg-dark text-white border border-warning h-100 p-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Lenguajes de Programación</h5>
+                    <p class="card-text text-light">C#, Python, JavaScript</p>
+                    <a href="#" class="btn btn-primary btn-sm">inf</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2: Bases de Datos -->
+        <div class="col-md-4">
+            <div class="card bg-dark text-white border border-warning h-100 p-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Gestión de Bases de Datos</h5>
+                    <p class="card-text text-light">MySQL, SQL Server, Diseño y Normalización de Tablas</p>
+                    <a href="#" class="btn btn-primary btn-sm">inf</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3: Herramientas y Control de Versiones -->
+        <div class="col-md-4">
+            <div class="card bg-dark text-white border border-warning h-100 p-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Herramientas y Entornos</h5>
+                    <p class="card-text text-light">Visual Studio, Git, GitHub, Postman</p>
+                    <a href="#" class="btn btn-primary btn-sm">inf</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4: Desarrollo Web o Soporte -->
+        <div class="col-md-4">
+            <div class="card bg-dark text-white border border-warning h-100 p-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Sistemas y Soporte</h5>
+                    <p class="card-text text-light">Mantenimiento de equipo de cómputo, Redes LAN, Resolución de incidencias</p>
+                    <a href="#" class="btn btn-primary btn-sm">inf</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        </section>
+        <section id="proyectos" class="container-fluid">
+            <h1 class="text-center">Proyectos Académicos Destacados</h1>
+            <!-- Carousel -->
+         <article id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenesA/ELL.jpg" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenesA/HU.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenesA/ITAS.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+         </article>
+
+        </section>
+        <section id="Educación" class="container-fluid bg-secondary"> 
+          <article class="container mt-3">
+            <h1 class="text-center">Educación</h1>
+            <img src="imagenesA/JAVA.jpg" class="float-start img-fluid rounded d-block"  width="250" height="175">
+            <img src="imagenesA/LINUX.jpg" class="float-end img-fluid rounded d-block"  width="250" height="175"> 
+            <img src="imagenesA/BASE.jpg" class="mx-auto d-block rounded" width="305" height="235">      
+          </article>
+        </section>
+          </body>
+          </html>
+    </main>
+    <footer class="container-fluid mt-5 p-5 text-white" style="background-color: #1a1a2e; border-top: 4px solid #0dcaf0;">
+    <div class="row align-items-center">
+        
+        <!-- Columna Izquierda: Nombre y Carrera -->
+        <article class="col-md-6 mb-4 mb-md-0 text-center text-md-start ps-md-5">
+            <h3 class="fw-bold text-info mb-1">LUIS ARTURO DE LA CRUZ ZUÑIGA</h3>
+            <p class="text-light mb-0 fs-6">DESARROLLO DE SOFTWARE | LEÓN, GTO., MÉXICO</p>
+        </article>
+        
+    </div>
+</footer>
+</footer>
+<!-- The Modal -->
+<div class="modal" id="myModalLogin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Mis valores Profecionales </h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+<!-- Reemplaza el contenido de tu <div class="modal-body"> por este -->
+<div class="container-fluid px-4 py-3 text-white">
+    
+    <!-- Valor 1: Innovación y Creatividad -->
+    <article class="mb-4">
+        <h5 class="fw-bold text-warning mb-1">
+            <i class="bi bi-lightbulb-fill me-2"></i>Innovación y Creatividad
+        </h5>
+        <p class="text-light ps-4 mb-0 fs-6">
+            Búsqueda constante de soluciones creativas y eficientes para la resolución de problemas lógicos y desafíos en el desarrollo de software.
+        </p>
+    </article>
+
+    <!-- Valor 2: Calidad y Orden -->
+    <article class="mb-4">
+        <h5 class="fw-bold text-warning mb-1">
+            <i class="bi bi-code-slash me-2"></i>Calidad y Estructura
+        </h5>
+        <p class="text-light ps-4 mb-0 fs-6">
+            Enfoque en escribir código limpio, legible y bien estructurado, siguiendo los estándares de diseño y buenas prácticas de programación.
+        </p>
+    </article>
+
+    <!-- Valor 3: Adaptabilidad -->
+    <article>
+        <h5 class="fw-bold text-warning mb-1">
+            <i class="bi bi-arrow-repeat me-2"></i>Adaptabilidad Tecnológica
+        </h5>
+        <p class="text-light ps-4 mb-0 fs-6">
+            Facilidad para adaptarme rápidamente a nuevos entornos de desarrollo, metodologías de trabajo y herramientas digitales emergentes.
+        </p>
+    </article>
+
+</div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+   
+
+    
+</body>
+</html>
